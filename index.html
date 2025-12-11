@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda - Ayam Geprek Juara</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">AYAM GEPREK <span>NABILA</span></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#lokasi">Lokasi</a></li>
+                <li><a href="#" class="btn-nav" onclick="pesanUmum()">Pesan Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Pedasnya Nendang, <br>Crispy-nya Juara!</h1>
+            <p>Nikmati ayam geprek dengan sambal fresh ulek dadakan. Harga pelajar, rasa Nikmat.</p>
+        </div>
+    </section>
+
+    <section id="testimoni" class="section testimonials">
+        <div class="section-title">
+            <h2>Apa Kata Mereka?</h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Sambal bawangnya juara banget! Pedasnya beneran nggak main-main. Ayamnya juga gede."</p>
+                <span class="customer-name">- Budi Santoso</span>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                <p>"Suka banget sama yang Mozzarella. Kejunya melimpah, ayamnya garing. Pengiriman juga cepet."</p>
+                <span class="customer-name">- Siti Aminah</span>
+            </div>
+            <div class="testi-card">
+                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                        class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                <p>"Tempat makan siang favorit. Murah meriah tapi rasanya mewah. Recommended!"</p>
+                <span class="customer-name">- Rian Pratama</span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="lokasi">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tentang Kami</h3>
+                <p>Kami menyajikan ayam geprek dengan bumbu rahasia dan sambal ulek dadakan untuk menjaga kesegaran
+                    rasa.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Lokasi & Kontak</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i>Perum Unima Blok B No.34 </li>
+                    <li><i class="fas fa-phone"></i> 0895-3361-05618</li>
+                    <li><i class="fas fa-clock"></i> Buka: 08.00 - 20.30 WITA</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Media Sosial</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram fa-lg"></i> @Ayamgepreknabila</a><br>
+                    <a href="#"><i class="fab fa-tiktok fa-lg"></i> @Ayamgepreknabila</a>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#" class="float-wa" onclick="pesanUmum()">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

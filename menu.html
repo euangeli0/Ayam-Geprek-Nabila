@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Kami - Ayam Geprek Juara</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">GEPREK <span>JUARA</span></div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Beranda</a></li>
+                <li><a href="#" style="color:var(--primary-red);">Menu</a></li>
+                <li><a href="index.html#testimoni">Testimoni</a></li>
+                <li><a href="index.html#lokasi">Lokasi</a></li>
+                <li><a href="#" class="btn-nav" onclick="pesanUmum()">Pesan Sekarang</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu" class="section" style="margin-top: 60px; padding-bottom: 50px;">
+        <div class="section-title">
+            <h2>Daftar Menu Lengkap</h2>
+            <p>Pilih jagoan pedasmu dan segarkan harimu!</p>
+        </div>
+
+        <div class="menu-grid">
+
+            <div class="menu-card">
+                <img src="img/ayam-gepreksambalijo.jpg.jpg" alt="Ayam Geprek Sambal ijo" class="menu-img">
+                <div class="menu-info">
+                    <h3>Paket Geprek Sambal ijo</h3>
+                    <p class="menu-desc">Nasi + Ayam Geprek + Lalapan + sambal ijo.</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 20.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Original')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ayam-Mozzarella.jpg.webp" alt="Ayam Mozzarella" class="menu-img">
+                <div class="menu-info">
+                    <h3>Paket Geprek Mozzarella</h3>
+                    <p class="menu-desc">Nasi + Ayam Geprek + Lelehan Keju Mozzarella Melimpah.</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 20.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Geprek Mozzarella')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/ayam-sambalmata.jpg.webp" alt="Ayam Sambal Mata" class="menu-img">
+                <div class="menu-info">
+                    <h3>Paket Sambal Matah</h3>
+                    <p class="menu-desc">Nasi + Ayam Crispy + Sambal Mata Khas Bali yang Segar.</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 20.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Paket Sambal Matah')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/nutri-sari.jpg.jpg" alt="Nutri Sari Jeruk" class="menu-img">
+                <div class="menu-info">
+                    <h3>Es Jeruk Peras</h3>
+                    <p class="menu-desc">100% Jeruk murni, manis dan segar.</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 6.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Es Jeruk Peras')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/es-teh.jpg.jpg" alt="Es Teh" class="menu-img">
+                <div class="menu-info">
+                    <h3>Es Teh Manis Jumbo</h3>
+                    <p class="menu-desc">Es Teh manis ukuran jumbo, puas segarnya.</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 6.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Es Teh Manis Jumbo')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-card">
+                <img src="img/pop-ice.jpg.webp" alt="Pop Ice" class="menu-img">
+                <div class="menu-info">
+                    <h3>Pop Ice</h3>
+                    <p class="menu-desc">Isian lengkap: cincau, boba dan susu.</p>
+                    <div class="menu-footer">
+                        <span class="price">Rp 6.000</span>
+                        <button class="btn-order" onclick="pesanMenu('Es Campur Spesial')">
+                            <i class="fab fa-whatsapp"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <a href="#" class="float-wa" onclick="pesanUmum()">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
